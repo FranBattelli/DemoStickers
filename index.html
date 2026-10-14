@@ -100,17 +100,14 @@
       overflow-x: hidden;
       position: relative;
 
-      /* Fondo estilo Hoja de Agenda Crema Pastel con renglones y margen */
+      /* Fondo estilo Hoja de Agenda Crema Pastel (delicado, suave y sin líneas invasivas) */
       background-image: 
-        /* Línea de margen vertical roja/rosa de agenda */
-        linear-gradient(90deg, transparent 56px, rgba(255, 110, 125, 0.45) 57px, rgba(255, 110, 125, 0.45) 59px, transparent 60px),
-        /* Renglones horizontales de agenda (cada 32px) */
-        linear-gradient(to bottom, transparent 31px, rgba(160, 195, 230, 0.38) 32px),
-        /* Cuadrícula milimétrica vertical de planner (cada 32px) */
-        linear-gradient(to right, rgba(195, 180, 160, 0.22) 1px, transparent 1px) !important;
-      background-size: 100% 100%, 100% 32px, 32px 100% !important;
-      background-position: 0 0, 0 0, 0 0 !important;
-      background-attachment: scroll, fixed, fixed !important;
+        /* Cuadrícula sutil milimétrica de libreta / agenda (28px x 28px) */
+        linear-gradient(to right, rgba(185, 170, 150, 0.18) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(185, 170, 150, 0.18) 1px, transparent 1px) !important;
+      background-size: 28px 28px !important;
+      background-position: 0 0 !important;
+      background-attachment: fixed !important;
     }
 
     a {
