@@ -42,20 +42,20 @@
       --c-peach: #FFE3CF;
 
       /* Tonos de Papel y Tinta (Estilo Hoja de Agenda Crema Pastel) */
-      --c-paper: #FAF4E8;         /* Tono crema marfil cálido típico de hojas de agenda */
-      --c-paper-sheet: #FFFFFF;   /* Blanco puro para tarjetas y stickers */
-      --c-paper-dark: #F3EBD9;    /* Tono crema más concentrado para secciones */
+      --c-paper: #FAF0DD;         /* Crema marfil cálido definido, tipo hoja de agenda */
+      --c-paper-sheet: #FFFFFF;   /* Blanco puro para tarjetas, recortes y stickers */
+      --c-paper-dark: #F3E5CD;    /* Tono crema toffee para secciones alternadas */
       --c-ink: #262135;           /* Tinta profunda para lectura */
-      --c-ink-muted: #645C77;     /* Texto secundario */
-      --c-ink-light: #9B93AF;     /* Texto sutil */
-      --c-line: #E2D6C0;          /* Líneas de cuadrícula de agenda */
-      --c-line-blue: #C2D6E8;     /* Renglones de agenda */
-      --c-line-margin: #FF9EAA;   /* Margen vertical rosa suave de agenda */
+      --c-ink-muted: #5C556D;     /* Texto secundario */
+      --c-ink-light: #8E879F;     /* Texto sutil */
+      --c-line: #DFCFB4;          /* Líneas de cuadrícula de agenda */
+      --c-line-blue: #B8D4EE;     /* Renglones de agenda */
+      --c-line-margin: #FF7B89;   /* Margen vertical rojo/rosa de agenda */
 
       /* Superficies y Bordes */
       --c-card-bg: #FFFFFF;
-      --c-card-border: #E8DCCB;
-      --c-header-bg: rgba(250, 244, 232, 0.92);
+      --c-card-border: #E8D6BD;
+      --c-header-bg: rgba(250, 240, 221, 0.95);
       
       /* Tipografías con Fallbacks */
       --font-display: 'Fredoka', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -77,35 +77,6 @@
       --header-height: 76px;
     }
 
-    /* MODO OSCURO (PREFERS-COLOR-SCHEME - PLANNER NOCHE) */
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --c-paper: #181522;
-        --c-paper-sheet: #231F30;
-        --c-paper-dark: #120F1B;
-        --c-ink: #F5F1EB;
-        --c-ink-muted: #AFA8C2;
-        --c-ink-light: #776F8C;
-        --c-line: #302A40;
-        --c-line-blue: #2A364F;
-        --c-line-margin: #5D2A3A;
-        --c-card-bg: #231F30;
-        --c-card-border: #332C45;
-        --c-header-bg: rgba(24, 21, 34, 0.92);
-
-        --c-pink: #4A2735;
-        --c-mint: #1E3D32;
-        --c-lilac: #2F2A4C;
-        --c-butter: #42391C;
-        --c-sky: #1F364D;
-        --c-peach: #4A3123;
-
-        --shadow-paper: 0 4px 20px rgba(0, 0, 0, 0.4);
-        --shadow-hover: 0 14px 34px rgba(0, 0, 0, 0.6);
-        --shadow-sticker: 0 4px 0 rgba(0, 0, 0, 0.4), 0 8px 20px rgba(0, 0, 0, 0.5);
-      }
-    }
-
     /* ==========================================================================
        RESET Y BASE
        ========================================================================== */
@@ -124,21 +95,22 @@
     body {
       font-family: var(--font-body);
       color: var(--c-ink);
-      background-color: var(--c-paper);
+      background-color: #FAF0DD !important;
       line-height: 1.6;
       overflow-x: hidden;
       position: relative;
 
-      /* Fondo estilo Hoja de Agenda Crema con Cuadrícula y Margen de Planner */
+      /* Fondo estilo Hoja de Agenda Crema Pastel con renglones y margen */
       background-image: 
-        /* Línea vertical de margen lateral izquierdo de agenda */
-        linear-gradient(90deg, transparent 69px, rgba(255, 120, 130, 0.28) 70px, transparent 71px),
-        /* Cuadrícula sutil milimétrica de agenda / planner (26px x 26px) */
-        linear-gradient(to right, rgba(175, 195, 218, 0.22) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(175, 195, 218, 0.22) 1px, transparent 1px);
-      background-size: 100% 100%, 26px 26px, 26px 26px;
-      background-position: 0 0, 0 0, 0 0;
-      background-attachment: scroll, fixed, fixed;
+        /* Línea de margen vertical roja/rosa de agenda */
+        linear-gradient(90deg, transparent 56px, rgba(255, 110, 125, 0.45) 57px, rgba(255, 110, 125, 0.45) 59px, transparent 60px),
+        /* Renglones horizontales de agenda (cada 32px) */
+        linear-gradient(to bottom, transparent 31px, rgba(160, 195, 230, 0.38) 32px),
+        /* Cuadrícula milimétrica vertical de planner (cada 32px) */
+        linear-gradient(to right, rgba(195, 180, 160, 0.22) 1px, transparent 1px) !important;
+      background-size: 100% 100%, 100% 32px, 32px 100% !important;
+      background-position: 0 0, 0 0, 0 0 !important;
+      background-attachment: scroll, fixed, fixed !important;
     }
 
     a {
