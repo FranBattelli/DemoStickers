@@ -84,8 +84,9 @@ En la cabecera del archivo, dentro de `:root`, podés ajustar la paleta según l
   --c-butter: #FFF0B8;
   --c-sky: #CFE8FF;
 
-  /* Fondo y texto */
-  --c-paper: #FFFDF9;         /* Fondo color papel */
+  /* Fondo y texto (Estilo Hoja de Agenda Crema Pastel) */
+  --c-paper: #FAF4E8;         /* Fondo color crema marfil estilo hoja de agenda */
+  --c-paper-dark: #F3EBD9;    /* Tono crema para secciones alternadas */
   --c-ink: #262135;           /* Tinta para textos principales */
 }
 ```

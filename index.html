@@ -11,8 +11,8 @@
   <meta property="og:description" content="Libretas, stickers, ficheros y detalles hechos con amor. Envíos a todo el país.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://papelypurpurina.com">
-  <meta name="theme-color" content="#FFFBF4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1E1A29" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF4E8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#181522" media="(prefers-color-scheme: dark)">
 
   <!-- Favicon SVG en data-URI -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23FF5A5F'/><text y='70' x='18' font-size='65' fill='white'>✨</text></svg>">
@@ -41,21 +41,21 @@
       --c-sky: #CFE8FF;
       --c-peach: #FFE3CF;
 
-      /* Tonos de Papel y Tinta */
-      --c-paper: #FFFDF9;         /* Blanco cálido natural */
-      --c-paper-sheet: #FFFFFF;   /* Blanco puro para tarjetas */
-      --c-paper-dark: #F7F1E5;    /* Tono para fondo contrastante */
+      /* Tonos de Papel y Tinta (Estilo Hoja de Agenda Crema Pastel) */
+      --c-paper: #FAF4E8;         /* Tono crema marfil cálido típico de hojas de agenda */
+      --c-paper-sheet: #FFFFFF;   /* Blanco puro para tarjetas y stickers */
+      --c-paper-dark: #F3EBD9;    /* Tono crema más concentrado para secciones */
       --c-ink: #262135;           /* Tinta profunda para lectura */
       --c-ink-muted: #645C77;     /* Texto secundario */
       --c-ink-light: #9B93AF;     /* Texto sutil */
-      --c-line: #E3DBCF;          /* Líneas de cuaderno */
-      --c-line-blue: #CDE2F8;     /* Renglones escolares */
-      --c-line-margin: #FFB3BA;   /* Margen rojo de libreta */
+      --c-line: #E2D6C0;          /* Líneas de cuadrícula de agenda */
+      --c-line-blue: #C2D6E8;     /* Renglones de agenda */
+      --c-line-margin: #FF9EAA;   /* Margen vertical rosa suave de agenda */
 
       /* Superficies y Bordes */
       --c-card-bg: #FFFFFF;
-      --c-card-border: #EFE8DA;
-      --c-header-bg: rgba(255, 253, 249, 0.88);
+      --c-card-border: #E8DCCB;
+      --c-header-bg: rgba(250, 244, 232, 0.92);
       
       /* Tipografías con Fallbacks */
       --font-display: 'Fredoka', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -77,21 +77,21 @@
       --header-height: 76px;
     }
 
-    /* MODO OSCURO (PREFERS-COLOR-SCHEME) */
+    /* MODO OSCURO (PREFERS-COLOR-SCHEME - PLANNER NOCHE) */
     @media (prefers-color-scheme: dark) {
       :root {
-        --c-paper: #16131F;
-        --c-paper-sheet: #201C2B;
-        --c-paper-dark: #110E18;
+        --c-paper: #181522;
+        --c-paper-sheet: #231F30;
+        --c-paper-dark: #120F1B;
         --c-ink: #F5F1EB;
         --c-ink-muted: #AFA8C2;
         --c-ink-light: #776F8C;
         --c-line: #302A40;
         --c-line-blue: #2A364F;
         --c-line-margin: #5D2A3A;
-        --c-card-bg: #201C2B;
+        --c-card-bg: #231F30;
         --c-card-border: #332C45;
-        --c-header-bg: rgba(22, 19, 31, 0.9);
+        --c-header-bg: rgba(24, 21, 34, 0.92);
 
         --c-pink: #4A2735;
         --c-mint: #1E3D32;
@@ -128,13 +128,17 @@
       line-height: 1.6;
       overflow-x: hidden;
       position: relative;
-      /* Textura sutil de papel artesanal */
+
+      /* Fondo estilo Hoja de Agenda Crema con Cuadrícula y Margen de Planner */
       background-image: 
-        radial-gradient(var(--c-line) 0.75px, transparent 0.75px),
-        radial-gradient(var(--c-line) 0.75px, var(--c-paper) 0.75px);
-      background-size: 30px 30px;
-      background-position: 0 0, 15px 15px;
-      background-attachment: fixed;
+        /* Línea vertical de margen lateral izquierdo de agenda */
+        linear-gradient(90deg, transparent 69px, rgba(255, 120, 130, 0.28) 70px, transparent 71px),
+        /* Cuadrícula sutil milimétrica de agenda / planner (26px x 26px) */
+        linear-gradient(to right, rgba(175, 195, 218, 0.22) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(175, 195, 218, 0.22) 1px, transparent 1px);
+      background-size: 100% 100%, 26px 26px, 26px 26px;
+      background-position: 0 0, 0 0, 0 0;
+      background-attachment: scroll, fixed, fixed;
     }
 
     a {
@@ -723,6 +727,10 @@
 
     .section--tinted {
       background-color: var(--c-paper-dark);
+      background-image: 
+        linear-gradient(to right, rgba(160, 140, 120, 0.10) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(160, 140, 120, 0.10) 1px, transparent 1px);
+      background-size: 26px 26px;
     }
 
     .section-header {
