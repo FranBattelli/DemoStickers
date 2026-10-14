@@ -1,0 +1,3154 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papel & Purpurina | Papelería Creativa & Objetos Bonitos</title>
+  <meta name="description" content="Papelería artesanal y creativa: libretas anilladas, ficheros, planchas de stickers die-cut, libros para colorear y tarjetas de presentación personalizadas. ¡Hacé tu pedido directo por WhatsApp!">
+  
+  <!-- Open Graph / Meta Compartir -->
+  <meta property="og:title" content="Papel & Purpurina | Papelería Creativa">
+  <meta property="og:description" content="Libretas, stickers, ficheros y detalles hechos con amor. Envíos a todo el país.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://papelypurpurina.com">
+  <meta name="theme-color" content="#FFFBF4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1E1A29" media="(prefers-color-scheme: dark)">
+
+  <!-- Favicon SVG en data-URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23FF5A5F'/><text y='70' x='18' font-size='65' fill='white'>✨</text></svg>">
+
+  <!-- Google Fonts: Fredoka (Títulos), Caveat (Trazos manuscritos), Nunito (Lectura) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       VARIABLES Y SISTEMA DE DISEÑO (EDITABLE)
+       ========================================================================== */
+    :root {
+      /* Paleta de Marca Principal */
+      --c-accent: #FF5A5F;        /* Coral vibrante para llamadas a la acción */
+      --c-accent-hover: #E8454A;  /* Hover del botón principal */
+      --c-accent-soft: rgba(255, 90, 95, 0.12);
+      --c-accent-ink: #FFFFFF;
+
+      /* Pasteles Artesanales */
+      --c-pink: #FFD6E0;
+      --c-mint: #C8F0DF;
+      --c-lilac: #DCD3FF;
+      --c-butter: #FFF0B8;
+      --c-sky: #CFE8FF;
+      --c-peach: #FFE3CF;
+
+      /* Tonos de Papel y Tinta */
+      --c-paper: #FFFDF9;         /* Blanco cálido natural */
+      --c-paper-sheet: #FFFFFF;   /* Blanco puro para tarjetas */
+      --c-paper-dark: #F7F1E5;    /* Tono para fondo contrastante */
+      --c-ink: #262135;           /* Tinta profunda para lectura */
+      --c-ink-muted: #645C77;     /* Texto secundario */
+      --c-ink-light: #9B93AF;     /* Texto sutil */
+      --c-line: #E3DBCF;          /* Líneas de cuaderno */
+      --c-line-blue: #CDE2F8;     /* Renglones escolares */
+      --c-line-margin: #FFB3BA;   /* Margen rojo de libreta */
+
+      /* Superficies y Bordes */
+      --c-card-bg: #FFFFFF;
+      --c-card-border: #EFE8DA;
+      --c-header-bg: rgba(255, 253, 249, 0.88);
+      
+      /* Tipografías con Fallbacks */
+      --font-display: 'Fredoka', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-hand: 'Caveat', 'Brush Script MT', cursive;
+      --font-body: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Sombras y Bordes */
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --radius-pill: 9999px;
+
+      --shadow-paper: 0 4px 15px rgba(38, 33, 53, 0.05);
+      --shadow-hover: 0 12px 30px rgba(38, 33, 53, 0.12);
+      --shadow-sticker: 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 18px rgba(38, 33, 53, 0.08);
+      --shadow-floating: 0 16px 36px rgba(255, 90, 95, 0.28);
+
+      --container-max: 1200px;
+      --header-height: 76px;
+    }
+
+    /* MODO OSCURO (PREFERS-COLOR-SCHEME) */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --c-paper: #16131F;
+        --c-paper-sheet: #201C2B;
+        --c-paper-dark: #110E18;
+        --c-ink: #F5F1EB;
+        --c-ink-muted: #AFA8C2;
+        --c-ink-light: #776F8C;
+        --c-line: #302A40;
+        --c-line-blue: #2A364F;
+        --c-line-margin: #5D2A3A;
+        --c-card-bg: #201C2B;
+        --c-card-border: #332C45;
+        --c-header-bg: rgba(22, 19, 31, 0.9);
+
+        --c-pink: #4A2735;
+        --c-mint: #1E3D32;
+        --c-lilac: #2F2A4C;
+        --c-butter: #42391C;
+        --c-sky: #1F364D;
+        --c-peach: #4A3123;
+
+        --shadow-paper: 0 4px 20px rgba(0, 0, 0, 0.4);
+        --shadow-hover: 0 14px 34px rgba(0, 0, 0, 0.6);
+        --shadow-sticker: 0 4px 0 rgba(0, 0, 0, 0.4), 0 8px 20px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    /* ==========================================================================
+       RESET Y BASE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--c-ink);
+      background-color: var(--c-paper);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+      /* Textura sutil de papel artesanal */
+      background-image: 
+        radial-gradient(var(--c-line) 0.75px, transparent 0.75px),
+        radial-gradient(var(--c-line) 0.75px, var(--c-paper) 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      background-attachment: fixed;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea, select {
+      font: inherit;
+      color: inherit;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* Skip link accesible */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      background: var(--c-accent);
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      z-index: 99999;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    /* Barra de progreso de lectura */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--c-accent), #FFB085, #FF5A5F);
+      transform-origin: 0% 50%;
+      transform: scaleX(0);
+      z-index: 10001;
+      pointer-events: none;
+    }
+
+    /* Contenedor central */
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-inline: auto;
+      padding-inline: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding-inline: 2rem;
+      }
+    }
+
+    /* Tipografía Display */
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--c-ink);
+    }
+
+    .font-hand {
+      font-family: var(--font-hand);
+      font-weight: 700;
+      font-size: 1.35em;
+      color: var(--c-accent);
+      display: inline-block;
+    }
+
+    /* ==========================================================================
+       DETALLES ARTESANALES (WASHI, STICKERS, NOTEBOOK)
+       ========================================================================== */
+    
+    /* Cinta Washi Tape decorativa */
+    .washi-tape {
+      position: absolute;
+      height: 24px;
+      width: 100px;
+      background: rgba(255, 214, 224, 0.75);
+      backdrop-filter: blur(2px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      z-index: 3;
+      pointer-events: none;
+      /* Extremos con corte de tijera dentada */
+      clip-path: polygon(
+        0% 0%, 5% 50%, 0% 100%, 
+        95% 100%, 100% 50%, 95% 0%
+      );
+      transform: rotate(-3deg);
+    }
+    .washi-tape--mint { background: rgba(200, 240, 223, 0.8); }
+    .washi-tape--butter { background: rgba(255, 240, 184, 0.85); }
+    .washi-tape--lilac { background: rgba(220, 211, 255, 0.8); }
+    .washi-tape--accent { background: rgba(255, 90, 95, 0.75); }
+
+    /* Efecto Sticker Die-Cut */
+    .sticker-cut {
+      background: var(--c-paper-sheet);
+      border: 4px solid #FFFFFF;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sticker);
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+      will-change: transform;
+    }
+    .sticker-cut:hover {
+      transform: translateY(-6px) scale(1.02) rotate(1deg);
+      box-shadow: var(--shadow-hover);
+    }
+
+    /* Libreta con renglones de fondo */
+    .notebook-paper {
+      background-color: var(--c-paper-sheet);
+      background-image: 
+        repeating-linear-gradient(transparent, transparent 27px, var(--c-line-blue) 28px),
+        linear-gradient(90deg, transparent 40px, var(--c-line-margin) 41px, transparent 42px);
+      background-size: 100% 28px, 100% 100%;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-paper);
+      border: 1px solid var(--c-card-border);
+    }
+
+    /* Espiral de libreta anillada */
+    .spiral-binding {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      top: -12px;
+      left: 10%;
+      right: 10%;
+      height: 24px;
+      pointer-events: none;
+      z-index: 5;
+    }
+    .spiral-ring {
+      width: 14px;
+      height: 24px;
+      background: linear-gradient(135deg, #E2E8F0, #94A3B8, #E2E8F0);
+      border-radius: 8px;
+      box-shadow: inset 0 2px 2px rgba(255,255,255,0.8), 0 3px 6px rgba(0,0,0,0.18);
+    }
+
+    /* ==========================================================================
+       BOTONES Y LLAMADAS A LA ACCIÓN
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 48px;
+      padding: 0.75rem 1.6rem;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      border-radius: var(--radius-pill);
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      text-decoration: none;
+      white-space: nowrap;
+      position: relative;
+    }
+    .btn:active {
+      transform: scale(0.96) !important;
+    }
+    .btn:focus-visible {
+      outline: 3px solid var(--c-accent);
+      outline-offset: 3px;
+    }
+
+    .btn--primary {
+      background-color: var(--c-accent);
+      color: var(--c-accent-ink);
+      box-shadow: 0 6px 18px rgba(255, 90, 95, 0.35);
+    }
+    .btn--primary:hover {
+      background-color: var(--c-accent-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(255, 90, 95, 0.45);
+    }
+
+    .btn--whatsapp {
+      background-color: #25D366;
+      color: #FFFFFF;
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    }
+    .btn--whatsapp:hover {
+      background-color: #20BA5A;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn--secondary {
+      background-color: var(--c-paper-sheet);
+      color: var(--c-ink);
+      border-color: var(--c-card-border);
+      box-shadow: var(--shadow-paper);
+    }
+    .btn--secondary:hover {
+      background-color: var(--c-paper-dark);
+      border-color: var(--c-accent);
+      color: var(--c-accent);
+      transform: translateY(-3px);
+    }
+
+    .btn--sm {
+      min-height: 40px;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.92rem;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .badge--accent { background: var(--c-accent-soft); color: var(--c-accent); }
+    .badge--mint { background: rgba(200, 240, 223, 0.8); color: #0C6B46; }
+    .badge--butter { background: rgba(255, 240, 184, 0.9); color: #8A6800; }
+    .badge--lilac { background: rgba(220, 211, 255, 0.8); color: #5136B3; }
+
+    /* ==========================================================================
+       HEADER Y NAVEGACIÓN
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background: var(--c-header-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--c-card-border);
+      z-index: 1000;
+      transition: height 0.3s ease, box-shadow 0.3s ease;
+    }
+    .site-header.scrolled {
+      height: 64px;
+      box-shadow: var(--shadow-paper);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    /* Logo de la marca */
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--c-ink);
+      text-decoration: none;
+    }
+    .brand-logo svg {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .brand-logo:hover svg {
+      transform: rotate(-8deg) scale(1.1);
+    }
+    .brand-logo span span {
+      color: var(--c-accent);
+    }
+
+    /* Navegación Desktop */
+    .nav-menu {
+      display: none;
+      align-items: center;
+      gap: 1.6rem;
+      list-style: none;
+    }
+    @media (min-width: 992px) {
+      .nav-menu {
+        display: flex;
+      }
+    }
+
+    .nav-link {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--c-ink-muted);
+      position: relative;
+      padding-block: 0.5rem;
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--c-accent);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background: var(--c-accent);
+      border-radius: var(--radius-pill);
+      transition: width 0.25s ease, left 0.25s ease;
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    /* Botón Hamburguesa Mobile */
+    .hamburger-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      background: var(--c-paper-sheet);
+      border: 1px solid var(--c-card-border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      padding: 0;
+    }
+    @media (min-width: 992px) {
+      .hamburger-btn {
+        display: none;
+      }
+    }
+    .hamburger-btn span {
+      display: block;
+      width: 22px;
+      height: 2.5px;
+      background-color: var(--c-ink);
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .hamburger-btn.active span:nth-child(1) {
+      transform: translateY(7.5px) rotate(45deg);
+    }
+    .hamburger-btn.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger-btn.active span:nth-child(3) {
+      transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    /* Menú Mobile Desplegable */
+    .mobile-drawer {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      background: var(--c-paper);
+      border-bottom: 2px solid var(--c-card-border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      transform: translateY(-120%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.3s;
+      z-index: 999;
+    }
+    .mobile-drawer.open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    .mobile-drawer a {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--c-ink);
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed var(--c-line);
+    }
+    .mobile-drawer a:hover {
+      color: var(--c-accent);
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding-top: calc(var(--header-height) + 2rem);
+      padding-bottom: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    @media (min-width: 992px) {
+      .hero-section {
+        padding-top: calc(var(--header-height) + 3.5rem);
+        padding-bottom: 6rem;
+      }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.3rem, 5.5vw, 4.2rem);
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-title .hand-accent {
+      font-family: var(--font-hand);
+      color: var(--c-accent);
+      font-size: 1.15em;
+      position: relative;
+      white-space: nowrap;
+    }
+    .hero-title .hand-accent svg {
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 14px;
+    }
+
+    .hero-desc {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--c-ink-muted);
+      max-width: 540px;
+      margin-bottom: 2.2rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-perks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px dashed var(--c-line);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--c-ink-muted);
+    }
+    .hero-perk-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Escena Visual del Hero (Collage artesanal) */
+    .hero-visual {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      margin-inline: auto;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .hero-visual {
+        height: 480px;
+      }
+    }
+
+    /* Elementos flotantes de papelería en el Hero */
+    .hero-elem {
+      position: absolute;
+      will-change: transform;
+      filter: drop-shadow(0 12px 25px rgba(38, 33, 53, 0.12));
+    }
+
+    .hero-notebook {
+      width: 260px;
+      z-index: 2;
+      transform: rotate(-6deg);
+    }
+    @media (min-width: 768px) {
+      .hero-notebook {
+        width: 310px;
+      }
+    }
+
+    .hero-pencil {
+      width: 55px;
+      top: 15%;
+      right: 5%;
+      z-index: 4;
+      transform: rotate(32deg);
+    }
+
+    .hero-sticker-heart {
+      width: 90px;
+      top: 5%;
+      left: 8%;
+      z-index: 5;
+      transform: rotate(-12deg);
+    }
+
+    .hero-sticker-star {
+      width: 80px;
+      bottom: 12%;
+      right: 10%;
+      z-index: 5;
+      transform: rotate(18deg);
+    }
+
+    .hero-clip {
+      width: 45px;
+      bottom: 20%;
+      left: 10%;
+      z-index: 3;
+      transform: rotate(-25deg);
+    }
+
+    /* Decoraciones de fondo con Parallax */
+    .bg-doodle {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.55;
+    }
+
+    /* ==========================================================================
+       SECCIONES GENERALES
+       ========================================================================== */
+    .section {
+      padding-block: 4.5rem;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      .section {
+        padding-block: 6rem;
+      }
+    }
+
+    .section--tinted {
+      background-color: var(--c-paper-dark);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin-inline: auto;
+      margin-bottom: 3.5rem;
+    }
+    .section-title {
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      margin-bottom: 0.8rem;
+    }
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--c-ink-muted);
+    }
+
+    /* ==========================================================================
+       CATEGORÍAS (5 BLOQUES)
+       ========================================================================== */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+      gap: 1.5rem;
+    }
+    @media (min-width: 1200px) {
+      .categories-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .cat-card {
+      background: var(--c-card-bg);
+      border: 1px solid var(--c-card-border);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem 1.4rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      box-shadow: var(--shadow-paper);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+    .cat-card:hover {
+      transform: translateY(-8px) rotate(1deg);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .cat-icon-wrap {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    .cat-card:hover .cat-icon-wrap {
+      transform: scale(1.1) rotate(-5deg);
+    }
+    .cat-card--libretas .cat-icon-wrap { background: var(--c-pink); }
+    .cat-card--ficheros .cat-icon-wrap { background: var(--c-butter); }
+    .cat-card--stickers .cat-icon-wrap { background: var(--c-mint); }
+    .cat-card--colorear .cat-icon-wrap { background: var(--c-lilac); }
+    .cat-card--tarjetas .cat-icon-wrap { background: var(--c-sky); }
+
+    .cat-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .cat-desc {
+      font-size: 0.92rem;
+      color: var(--c-ink-muted);
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+
+    /* ==========================================================================
+       PRODUCTOS DESTACADOS
+       ========================================================================== */
+    /* Filtros por Categoría */
+    .product-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 2.8rem;
+    }
+    .filter-btn {
+      padding: 0.55rem 1.2rem;
+      background: var(--c-paper-sheet);
+      border: 1px solid var(--c-card-border);
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: var(--c-ink-muted);
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover {
+      border-color: var(--c-accent);
+      color: var(--c-accent);
+    }
+    .filter-btn.active {
+      background: var(--c-accent);
+      color: white;
+      border-color: var(--c-accent);
+      box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: var(--c-card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--c-card-border);
+      overflow: hidden;
+      box-shadow: var(--shadow-paper);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .product-thumb {
+      height: 220px;
+      width: 100%;
+      background: var(--c-paper-dark);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      overflow: hidden;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+    }
+
+    .product-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-cat {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--c-ink-light);
+      margin-bottom: 0.3rem;
+    }
+
+    .product-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-desc {
+      font-size: 0.92rem;
+      color: var(--c-ink-muted);
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      padding-top: 1rem;
+      border-top: 1px dashed var(--c-line);
+    }
+
+    .product-price {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--c-accent);
+    }
+
+    /* ==========================================================================
+       SECCIÓN: CÓMO SE ARMA TU PEDIDO (LÍNEA DE TIEMPO ANIMADA)
+       ========================================================================== */
+    .timeline-wrap {
+      position: relative;
+      max-width: 900px;
+      margin-inline: auto;
+      padding-block: 2rem;
+    }
+
+    /* Línea vertical central */
+    .timeline-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 28px;
+      width: 6px;
+      background: var(--c-line);
+      border-radius: 6px;
+      z-index: 1;
+    }
+    @media (min-width: 768px) {
+      .timeline-line {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .timeline-line-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      background: linear-gradient(180deg, var(--c-accent), #FFB085, #FF5A5F);
+      border-radius: 6px;
+      transition: height 0.15s ease-out;
+      box-shadow: 0 0 12px rgba(255, 90, 95, 0.4);
+    }
+
+    .timeline-step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 4rem;
+      position: relative;
+      opacity: 1;
+      transition: transform 0.3s ease;
+    }
+    .timeline-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-marker {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--c-paper-sheet);
+      border: 4px solid var(--c-line);
+      color: var(--c-ink);
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      z-index: 3;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    @media (min-width: 768px) {
+      .timeline-marker {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .timeline-step.active .timeline-marker {
+      background: var(--c-accent);
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+      transform: scale(1.18);
+      box-shadow: 0 10px 25px rgba(255, 90, 95, 0.45);
+    }
+    @media (min-width: 768px) {
+      .timeline-step.active .timeline-marker {
+        transform: translateX(-50%) scale(1.18);
+      }
+    }
+
+    .timeline-card {
+      margin-left: 76px;
+      background: var(--c-card-bg);
+      border: 1px solid var(--c-card-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-paper);
+      position: relative;
+      flex-grow: 1;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    }
+    .timeline-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    @media (min-width: 768px) {
+      .timeline-card {
+        width: 43%;
+        margin-left: 0;
+        flex-grow: 0;
+      }
+      .timeline-step:nth-child(odd) .timeline-card {
+        margin-right: auto;
+      }
+      .timeline-step:nth-child(even) .timeline-card {
+        margin-left: auto;
+      }
+    }
+
+    .timeline-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-bottom: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .timeline-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--c-accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-accent);
+      flex-shrink: 0;
+      margin-bottom: 0.8rem;
+    }
+
+    .timeline-step-title {
+      font-size: 1.35rem;
+      color: var(--c-ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-desc {
+      color: var(--c-ink-muted);
+      font-size: 0.98rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .timeline-tag {
+      padding: 0.25rem 0.65rem;
+      background: var(--c-paper-dark);
+      border-radius: var(--radius-pill);
+      color: var(--c-ink-muted);
+    }
+
+    /* ==========================================================================
+       SECCIÓN: PERSONALIZADOS (A MEDIDA & POLAROIDS)
+       ========================================================================== */
+    .custom-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .custom-wrap {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .custom-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-block: 1.8rem;
+    }
+    .custom-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .custom-checklist svg {
+      width: 22px;
+      height: 22px;
+      color: var(--c-accent);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* Collage Polaroid con Washi Tape */
+    .polaroid-gallery {
+      position: relative;
+      height: 440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .polaroid-card {
+      position: absolute;
+      background: #FFFFFF;
+      padding: 12px 12px 36px 12px;
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      width: 230px;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), z-index 0.2s;
+    }
+    .polaroid-card:hover {
+      transform: scale(1.08) rotate(0deg) !important;
+      z-index: 10 !important;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+    }
+    .polaroid-card img, .polaroid-card .polaroid-img {
+      width: 100%;
+      height: 180px;
+      border-radius: 2px;
+      display: block;
+      background: var(--c-paper-dark);
+    }
+    .polaroid-caption {
+      font-family: var(--font-hand);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #2D2738;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .polaroid-1 {
+      top: 5%;
+      left: 5%;
+      transform: rotate(-7deg);
+      z-index: 1;
+    }
+    .polaroid-2 {
+      top: 25%;
+      right: 5%;
+      transform: rotate(6deg);
+      z-index: 2;
+    }
+    .polaroid-3 {
+      bottom: 2%;
+      left: 20%;
+      transform: rotate(-2deg);
+      z-index: 3;
+    }
+
+    /* ==========================================================================
+       TESTIMONIOS (NOTAS ADHESIVAS PASTEL)
+       ========================================================================== */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 2rem;
+    }
+
+    .post-it {
+      padding: 2.2rem 1.8rem;
+      border-radius: 6px;
+      position: relative;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 280px;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .post-it:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+
+    .post-it--yellow { background-color: #FFF8C7; color: #3E3516; }
+    .post-it--pink { background-color: #FFE6EE; color: #43212C; }
+    .post-it--mint { background-color: #D8F7E8; color: #173B2E; }
+
+    .post-it-stars {
+      display: flex;
+      gap: 4px;
+      color: #FFAE00;
+      margin-bottom: 1rem;
+    }
+    .post-it-text {
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .post-it-author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .post-it-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .post-it-name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .post-it-info {
+      font-size: 0.82rem;
+      opacity: 0.75;
+    }
+
+    /* ==========================================================================
+       PREGUNTAS FRECUENTES (FAQ ACORDEÓN)
+       ========================================================================== */
+    .faq-container {
+      max-width: 760px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: var(--c-card-bg);
+      border: 1px solid var(--c-card-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-paper);
+      overflow: hidden;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .faq-item:hover {
+      border-color: var(--c-accent);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      padding: 1.3rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--c-ink);
+      cursor: pointer;
+    }
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--c-paper-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+      background-color: var(--c-accent);
+      color: white;
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1), padding 0.35s ease;
+      padding-inline: 1.6rem;
+      color: var(--c-ink-muted);
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+    .faq-item.open .faq-content {
+      padding-bottom: 1.4rem;
+      max-height: 500px;
+      transition: max-height 0.4s ease-in, padding 0.2s ease;
+    }
+
+    /* ==========================================================================
+       CONTACTO & FORMULARIO
+       ========================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    @media (min-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1.25fr;
+      }
+    }
+
+    .contact-info-card {
+      background: var(--c-card-bg);
+      border: 1px solid var(--c-card-border);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-paper);
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+    }
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: var(--radius-md);
+      background: var(--c-accent-soft);
+      color: var(--c-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+    .contact-item-sub {
+      color: var(--c-ink-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Formulario de consulta interactivo */
+    .contact-form {
+      background: var(--c-card-bg);
+      border: 1px solid var(--c-card-border);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-paper);
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .form-label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--c-ink);
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--c-card-border);
+      background: var(--c-paper);
+      color: var(--c-ink);
+      font-size: 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--c-accent);
+      box-shadow: 0 0 0 4px var(--c-accent-soft);
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .site-footer {
+      background: var(--c-paper-dark);
+      border-top: 1px solid var(--c-card-border);
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3.5rem;
+    }
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1.8fr 1fr 1fr;
+      }
+    }
+
+    .footer-about p {
+      color: var(--c-ink-muted);
+      margin-top: 1rem;
+      max-width: 380px;
+      font-size: 0.95rem;
+    }
+
+    .footer-col-title {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+    .footer-links a {
+      color: var(--c-ink-muted);
+      font-weight: 600;
+      transition: color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .footer-links a:hover {
+      color: var(--c-accent);
+      transform: translateX(4px);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 0.8rem;
+    }
+    .social-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--c-paper-sheet);
+      border: 1px solid var(--c-card-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-ink);
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .social-btn:hover {
+      background: var(--c-accent);
+      color: white;
+      transform: translateY(-4px) rotate(6deg);
+    }
+
+    .footer-bottom {
+      border-top: 1px dashed var(--c-line);
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--c-ink-light);
+    }
+
+    /* ==========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       ========================================================================== */
+    .floating-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
+      z-index: 9999;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+    }
+    .floating-wa:hover {
+      transform: scale(1.1) rotate(6deg);
+      box-shadow: 0 14px 34px rgba(37, 211, 102, 0.6);
+    }
+    .floating-wa-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 22px;
+      height: 22px;
+      background: var(--c-accent);
+      color: white;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid white;
+    }
+
+    /* Pulso suave */
+    .floating-wa::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid #25D366;
+      opacity: 0.7;
+      animation: pulse-ring 2.4s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      70% { transform: scale(1.35); opacity: 0; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+
+    /* ==========================================================================
+       ANIMACIONES Y ESTADOS CON GSAP
+       ========================================================================== */
+    /* Si JS está habilitado y soporta animación, ocultamos levemente antes de que GSAP active */
+    .js-anim [data-reveal="board"],
+    .js-anim [data-reveal="fade"] {
+      opacity: 0;
+      will-change: transform, opacity;
+    }
+
+    /* Respeto estricto a prefers-reduced-motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001s !important;
+      }
+      .js-anim [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .floating-wa::before {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip link de accesibilidad -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Barra de progreso de scroll -->
+  <div id="progress-bar" role="progressbar" aria-label="Progreso de lectura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- ==========================================================================
+       1. HEADER FIJO CON MENÚ Y PEDIDO WHATSAPP
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      
+      <!-- Logo de la Marca -->
+      <a href="#" class="brand-logo" aria-label="Inicio Papel & Purpurina">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Libreta y destello -->
+          <rect x="18" y="15" width="56" height="70" rx="8" fill="var(--c-accent)" />
+          <rect x="26" y="15" width="48" height="70" rx="6" fill="#FFFBF4" />
+          <line x1="36" y1="30" x2="62" y2="30" stroke="#FF5A5F" stroke-width="3" stroke-linecap="round" />
+          <line x1="36" y1="42" x2="62" y2="42" stroke="#E2D8CE" stroke-width="3" stroke-linecap="round" />
+          <line x1="36" y1="54" x2="54" y2="54" stroke="#E2D8CE" stroke-width="3" stroke-linecap="round" />
+          <circle cx="20" cy="28" r="4" fill="#262135" />
+          <circle cx="20" cy="50" r="4" fill="#262135" />
+          <circle cx="20" cy="72" r="4" fill="#262135" />
+          <!-- Destello brillante -->
+          <path d="M78 20L81 28L89 31L81 34L78 42L75 34L67 31L75 28L78 20Z" fill="#FFAE00" />
+        </svg>
+        <span id="nav-brand-name">Papel <span>&</span> Purpurina</span>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="#categorias" class="nav-link">Categorías</a></li>
+          <li><a href="#productos" class="nav-link">Destacados</a></li>
+          <li><a href="#como-funciona" class="nav-link">Cómo Pedir</a></li>
+          <li><a href="#personalizados" class="nav-link">Personalizados</a></li>
+          <li><a href="#opiniones" class="nav-link">Reseñas</a></li>
+          <li><a href="#faq" class="nav-link">Preguntas</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón Pedir y Hamburguesa -->
+      <div class="header-actions">
+        <a href="#contacto" class="btn btn--primary btn--sm js-wa-link" data-msg="¡Hola! Me gustaría hacer una consulta sobre sus productos 🌸">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+          </svg>
+          <span>Pedir por WhatsApp</span>
+        </a>
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Menú móvil desplegable -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="#categorias" class="mobile-link">✨ Categorías</a>
+    <a href="#productos" class="mobile-link">💌 Productos Destacados</a>
+    <a href="#como-funciona" class="mobile-link">📋 Cómo Armar tu Pedido</a>
+    <a href="#personalizados" class="mobile-link">🎨 Pedidos a Medida</a>
+    <a href="#opiniones" class="mobile-link">💖 Opiniones</a>
+    <a href="#faq" class="mobile-link">❓ Preguntas Frecuentes</a>
+    <a href="#contacto" class="mobile-link">📍 Contacto</a>
+  </div>
+
+  <main id="contenido-principal">
+
+    <!-- ==========================================================================
+         2. HERO SECTION CON ELEMENTOS QUE CAEN/SE ARMAN
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Texto y llamadas a la acción -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="badge badge--mint">🌿 Hecho a mano con dedicación</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Papelería que despierta tus ideas <br>
+            <span class="hand-accent">
+              más bonitas
+              <!-- Subrayado a mano alzada SVG -->
+              <svg viewBox="0 0 250 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 12C50 4 150 2 246 10C170 14 70 16 10 13" stroke="var(--c-accent)" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
+
+          <p class="hero-desc">
+            Libretas de ensueño, stickers troquelados, ficheros organizadores y tarjetas que enamoran. Diseñamos cada pieza para inspirar tus días.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#productos" class="btn btn--primary">
+              <span>Explorar Colección</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            
+            <a href="#contacto" class="btn btn--secondary js-wa-link" data-msg="¡Hola! Quisiera consultar por un pedido personalizado 💌">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+              <span>Consultar por WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-perks">
+            <div class="hero-perk-item">
+              <span style="color:var(--c-accent);">✔</span>
+              <span>100% Personalizable</span>
+            </div>
+            <div class="hero-perk-item">
+              <span style="color:var(--c-accent);">✔</span>
+              <span>Papel de alto gramaje</span>
+            </div>
+            <div class="hero-perk-item">
+              <span style="color:var(--c-accent);">✔</span>
+              <span>Envíos seguros a todo el país</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Escena visual animada (Libreta, lápiz, stickers y washi que caen al cargar) -->
+        <div class="hero-visual" id="hero-visual">
+          
+          <!-- Cinta Washi en esquina -->
+          <div class="washi-tape washi-tape--butter" style="top: 10px; right: 20px; width: 110px;"></div>
+          <div class="washi-tape washi-tape--mint" style="bottom: 15px; left: 10px; width: 120px; transform: rotate(8deg);"></div>
+
+          <!-- Libreta principal anillada (SVG Ilustración rica) -->
+          <div class="hero-elem hero-notebook" id="hero-notebook">
+            <svg viewBox="0 0 320 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de libreta artesanal de flores">
+              <!-- Sombra de la libreta -->
+              <rect x="15" y="15" width="290" height="370" rx="18" fill="rgba(0,0,0,0.12)" />
+              
+              <!-- Tapa trasera -->
+              <rect x="12" y="12" width="290" height="370" rx="18" fill="#F0E5D3" />
+              
+              <!-- Páginas interiores visibles -->
+              <rect x="8" y="8" width="290" height="370" rx="18" fill="#FFFDF9" stroke="#E3DBCF" stroke-width="2" />
+              
+              <!-- Tapa delantera con textura y diseño -->
+              <rect x="0" y="0" width="290" height="370" rx="18" fill="#FFD6E0" />
+              
+              <!-- Detalles de la tapa: Flores y pattern -->
+              <circle cx="145" cy="185" r="95" fill="#FFF4F7" />
+              <circle cx="145" cy="185" r="85" fill="none" stroke="#FF5A5F" stroke-width="2" stroke-dasharray="6 6" />
+              
+              <!-- Flor central -->
+              <circle cx="145" cy="170" r="18" fill="#FF5A5F" />
+              <circle cx="130" cy="185" r="18" fill="#FFB3BA" />
+              <circle cx="160" cy="185" r="18" fill="#FFB3BA" />
+              <circle cx="138" cy="202" r="18" fill="#FF5A5F" />
+              <circle cx="152" cy="202" r="18" fill="#FF5A5F" />
+              <circle cx="145" cy="187" r="12" fill="#FFF0B8" />
+
+              <!-- Texto en tapa -->
+              <text x="145" y="245" font-family="'Fredoka', sans-serif" font-weight="700" font-size="16" fill="#262135" text-anchor="middle">NOTAS & SUEÑOS</text>
+              <text x="145" y="265" font-family="'Caveat', cursive" font-weight="700" font-size="18" fill="#FF5A5F" text-anchor="middle">hecho con amor</text>
+
+              <!-- Elástico de cierre -->
+              <rect x="250" y="0" width="16" height="370" rx="4" fill="#FF5A5F" opacity="0.8" />
+
+              <!-- Anillado metálico doble en el lomo izquierdo -->
+              <g id="anillos">
+                <rect x="18" y="25" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="60" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="95" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="130" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="165" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="200" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="235" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="270" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="305" width="8" height="18" rx="4" fill="#94A3B8" />
+                <rect x="18" y="340" width="8" height="18" rx="4" fill="#94A3B8" />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Lápiz de madera artesanal -->
+          <div class="hero-elem hero-pencil" id="hero-pencil">
+            <svg viewBox="0 0 60 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lápiz pastel">
+              <!-- Goma -->
+              <rect x="15" y="0" width="30" height="25" rx="6" fill="#FFD6E0" />
+              <!-- Abrazadera metálica -->
+              <rect x="15" y="22" width="30" height="18" fill="#CBD5E1" />
+              <line x1="15" y1="28" x2="45" y2="28" stroke="#64748B" stroke-width="2" />
+              <line x1="15" y1="34" x2="45" y2="34" stroke="#64748B" stroke-width="2" />
+              <!-- Cuerpo hexagonal -->
+              <rect x="15" y="40" width="10" height="140" fill="#FFF0B8" />
+              <rect x="25" y="40" width="10" height="140" fill="#FFE58F" />
+              <rect x="35" y="40" width="10" height="140" fill="#FFD666" />
+              <!-- Punta de madera -->
+              <polygon points="15,180 45,180 30,215" fill="#EAD4B4" />
+              <!-- Grafito mina -->
+              <polygon points="26,205 34,205 30,215" fill="#334155" />
+            </svg>
+          </div>
+
+          <!-- Sticker Corazón Die-Cut -->
+          <div class="hero-elem hero-sticker-heart" id="hero-heart">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sticker de corazón">
+              <!-- Borde blanco grueso die-cut -->
+              <path d="M50 82C50 82 15 58 15 34C15 20 26 12 37 12C45 12 50 18 50 18C50 18 55 12 63 12C74 12 85 20 85 34C85 58 50 82 50 82Z" fill="white" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round" />
+              <!-- Relleno rosa suave -->
+              <path d="M50 80C50 80 18 57 18 34C18 22 27 15 37 15C44 15 48 20 50 20C52 20 56 15 63 15C73 15 82 22 82 34C82 57 50 80 50 80Z" fill="#FF5A5F" />
+              <!-- Brillo blanco interior -->
+              <ellipse cx="32" cy="28" rx="6" ry="10" transform="rotate(-30 32 28)" fill="white" opacity="0.6" />
+            </svg>
+          </div>
+
+          <!-- Sticker Estrella Feliz -->
+          <div class="hero-elem hero-sticker-star" id="hero-star">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sticker de estrella sonriente">
+              <!-- Borde die-cut -->
+              <path d="M50 10L61 35L88 38L68 57L73 84L50 71L27 84L32 57L12 38L39 35L50 10Z" fill="white" stroke="white" stroke-width="8" stroke-linejoin="round"/>
+              <path d="M50 10L61 35L88 38L68 57L73 84L50 71L27 84L32 57L12 38L39 35L50 10Z" fill="#FFF0B8"/>
+              <!-- Carita feliz -->
+              <circle cx="42" cy="46" r="3.5" fill="#262135" />
+              <circle cx="58" cy="46" r="3.5" fill="#262135" />
+              <path d="M43 56C47 61 53 61 57 56" stroke="#262135" stroke-width="2.5" stroke-linecap="round" />
+              <circle cx="37" cy="51" r="3" fill="#FFB3BA" />
+              <circle cx="63" cy="51" r="3" fill="#FFB3BA" />
+            </svg>
+          </div>
+
+          <!-- Clip metálico decorativo -->
+          <div class="hero-elem hero-clip" id="hero-clip">
+            <svg viewBox="0 0 50 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 90V25C15 15 25 8 35 8C45 8 48 16 48 25V80C48 90 40 96 30 96C20 96 12 88 12 78V35C12 28 17 22 24 22C31 22 36 28 36 35V75" stroke="#FF5A5F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Doodle flotante con efecto Parallax -->
+      <svg class="bg-doodle" data-speed="0.2" style="top: 15%; left: 3%; width: 50px;" viewBox="0 0 100 100" fill="none">
+        <path d="M20 50C40 20 60 80 80 50" stroke="#FFB085" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+      </svg>
+      <svg class="bg-doodle" data-speed="-0.3" style="bottom: 8%; right: 4%; width: 60px;" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="30" stroke="#C8F0DF" stroke-width="5" stroke-dasharray="10 6"/>
+      </svg>
+    </section>
+
+    <!-- ==========================================================================
+         3. CATEGORÍAS (5 BLOQUES)
+         ========================================================================== -->
+    <section class="section" id="categorias">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade">
+          <span class="badge badge--butter">Explorá nuestro mundo</span>
+          <h2 class="section-title">Categorías Hechas con Amor</h2>
+          <p class="section-subtitle">
+            Cada producto combina utilidad diaria con diseño artesanal para acompañar tus mejores proyectos.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+
+          <!-- 1. Libretas -->
+          <div class="cat-card cat-card--libretas" data-reveal="board">
+            <div class="washi-tape washi-tape--pink" style="top: -6px; left: 25px; width: 70px;"></div>
+            <div class="cat-icon-wrap">
+              <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                <rect x="14" y="8" width="40" height="48" rx="6" fill="#FF5A5F" />
+                <rect x="18" y="12" width="32" height="40" rx="4" fill="#FFFFFF" />
+                <line x1="24" y1="22" x2="44" y2="22" stroke="#FF5A5F" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="24" y1="30" x2="44" y2="30" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="24" y1="38" x2="36" y2="38" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="14" cy="18" r="2.5" fill="#1E293B"/>
+                <circle cx="14" cy="32" r="2.5" fill="#1E293B"/>
+                <circle cx="14" cy="46" r="2.5" fill="#1E293B"/>
+              </svg>
+            </div>
+            <h3 class="cat-title">Libretas</h3>
+            <p class="cat-desc">Anilladas dobles y tapa dura. Renglones, puntos o lisas en papel de 90g.</p>
+            <a href="#productos" class="btn btn--secondary btn--sm js-filter-trigger" data-category="libretas">Ver Libretas</a>
+          </div>
+
+          <!-- 2. Ficheros -->
+          <div class="cat-card cat-card--ficheros" data-reveal="board">
+            <div class="washi-tape washi-tape--butter" style="top: -6px; right: 25px; width: 70px;"></div>
+            <div class="cat-icon-wrap">
+              <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                <rect x="10" y="24" width="44" height="30" rx="5" fill="#FFB085" />
+                <path d="M14 24V16C14 14 16 12 18 12H28C30 12 32 14 32 16V24" fill="#FFF0B8"/>
+                <path d="M30 24V18C30 16 32 14 34 14H46C48 14 50 16 50 18V24" fill="#FFD6E0"/>
+                <rect x="10" y="24" width="44" height="30" rx="5" fill="#FFE58F" stroke="#D4A72C" stroke-width="2"/>
+                <rect x="22" y="34" width="20" height="10" rx="2" fill="white" stroke="#D4A72C"/>
+              </svg>
+            </div>
+            <h3 class="cat-title">Ficheros</h3>
+            <p class="cat-desc">Cajas organizadoras con separadores temáticos para estudio o recetas.</p>
+            <a href="#productos" class="btn btn--secondary btn--sm js-filter-trigger" data-category="ficheros">Ver Ficheros</a>
+          </div>
+
+          <!-- 3. Stickers -->
+          <div class="cat-card cat-card--stickers" data-reveal="board">
+            <div class="washi-tape washi-tape--mint" style="top: -6px; left: 30px; width: 70px;"></div>
+            <div class="cat-icon-wrap">
+              <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                <path d="M32 10L38 25L53 27L42 38L45 53L32 45L19 53L22 38L11 27L26 25L32 10Z" fill="#C8F0DF" stroke="white" stroke-width="3"/>
+                <circle cx="28" cy="32" r="2.5" fill="#0C6B46"/>
+                <circle cx="36" cy="32" r="2.5" fill="#0C6B46"/>
+                <path d="M29 38C31 41 33 41 35 38" stroke="#0C6B46" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="cat-title">Stickers</h3>
+            <p class="cat-desc">Planchas y die-cut en vinilo resistente al agua y roce. ¡Coleccionables!</p>
+            <a href="#productos" class="btn btn--secondary btn--sm js-filter-trigger" data-category="stickers">Ver Stickers</a>
+          </div>
+
+          <!-- 4. Libros para Colorear -->
+          <div class="cat-card cat-card--colorear" data-reveal="board">
+            <div class="washi-tape washi-tape--lilac" style="top: -6px; right: 20px; width: 70px;"></div>
+            <div class="cat-icon-wrap">
+              <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                <rect x="12" y="10" width="40" height="44" rx="4" fill="#DCD3FF"/>
+                <path d="M22 24C28 18 36 18 42 24C36 30 28 30 22 24Z" fill="none" stroke="#5136B3" stroke-width="2"/>
+                <circle cx="32" cy="24" r="3" fill="#FF5A5F"/>
+                <line x1="16" y1="46" x2="48" y2="46" stroke="#5136B3" stroke-width="3" stroke-linecap="round"/>
+                <line x1="16" y1="38" x2="38" y2="38" stroke="#FF5A5F" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="cat-title">Colorear</h3>
+            <p class="cat-desc">Ilustraciones botánicas y mandalas en hojas gruesas de 150g aptas marcadores.</p>
+            <a href="#productos" class="btn btn--secondary btn--sm js-filter-trigger" data-category="colorear">Ver Libros</a>
+          </div>
+
+          <!-- 5. Tarjetas de Presentación -->
+          <div class="cat-card cat-card--tarjetas" data-reveal="board">
+            <div class="washi-tape washi-tape--accent" style="top: -6px; left: 25px; width: 70px;"></div>
+            <div class="cat-icon-wrap">
+              <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                <rect x="8" y="18" width="48" height="32" rx="4" fill="#CFE8FF" stroke="#1D4ED8" stroke-width="1.5"/>
+                <circle cx="20" cy="30" r="5" fill="#FF5A5F"/>
+                <line x1="30" y1="28" x2="48" y2="28" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="30" y1="36" x2="42" y2="36" stroke="#93C5FD" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="cat-title">Tarjetas</h3>
+            <p class="cat-desc">Papel texturado kraft o lino, laminado mate y detalles dorados para tu marca.</p>
+            <a href="#productos" class="btn btn--secondary btn--sm js-filter-trigger" data-category="tarjetas">Ver Tarjetas</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. PRODUCTOS DESTACADOS CON FILTROS Y BOTÓN DIRECTO WA
+         ========================================================================== -->
+    <section class="section section--tinted" id="productos">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade">
+          <span class="badge badge--accent">Favoritos del taller</span>
+          <h2 class="section-title">Productos Destacados</h2>
+          <p class="section-subtitle">
+            Elegí tus favoritos y consultanos directamente por WhatsApp para coordinar modelos y envío.
+          </p>
+        </div>
+
+        <!-- Filtros Rápidos -->
+        <div class="product-filters" role="tablist" aria-label="Filtrar por categoría">
+          <button class="filter-btn active" data-filter="all">✨ Todos</button>
+          <button class="filter-btn" data-filter="libretas">📒 Libretas</button>
+          <button class="filter-btn" data-filter="ficheros">📁 Ficheros</button>
+          <button class="filter-btn" data-filter="stickers">⭐ Stickers</button>
+          <button class="filter-btn" data-filter="colorear">🎨 Colorear</button>
+          <button class="filter-btn" data-filter="tarjetas">💼 Tarjetas</button>
+        </div>
+
+        <!-- Grilla de Productos (8 Items con ilustraciones SVG detalladas) -->
+        <div class="products-grid" id="products-grid">
+
+          <!-- 1. Libreta Botánica A5 -->
+          <article class="product-card" data-category="libretas" data-reveal="board">
+            <div class="product-thumb">
+              <span class="badge badge--mint product-badge">Bestseller</span>
+              <!-- SVG Libreta Botánica -->
+              <svg width="150" height="170" viewBox="0 0 150 170" fill="none">
+                <rect x="15" y="10" width="120" height="150" rx="8" fill="#FFD6E0" stroke="#FF5A5F" stroke-width="2"/>
+                <path d="M75 40C60 60 40 80 75 120C110 80 90 60 75 40Z" fill="#C8F0DF" opacity="0.8"/>
+                <circle cx="75" cy="80" r="14" fill="#FF5A5F"/>
+                <rect x="10" y="20" width="8" height="12" rx="3" fill="#64748B"/>
+                <rect x="10" y="45" width="8" height="12" rx="3" fill="#64748B"/>
+                <rect x="10" y="70" width="8" height="12" rx="3" fill="#64748B"/>
+                <rect x="10" y="95" width="8" height="12" rx="3" fill="#64748B"/>
+                <rect x="10" y="120" width="8" height="12" rx="3" fill="#64748B"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Libretas</span>
+              <h3 class="product-title">Cuaderno Botánico A5</h3>
+              <p class="product-desc">Tapa dura laminada, 80 hojas rayadas de 90g, elástico rosa pastel y sobre interno.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 6.800</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Cuaderno Botánico A5" data-price="$ 6.800">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Plancha Stickers Kawaii -->
+          <article class="product-card" data-category="stickers" data-reveal="board">
+            <div class="product-thumb">
+              <span class="badge badge--butter product-badge">Novedad</span>
+              <!-- SVG Stickers Plancha -->
+              <svg width="150" height="170" viewBox="0 0 150 170" fill="none">
+                <rect x="15" y="10" width="120" height="150" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+                <circle cx="45" cy="45" r="18" fill="#FFF0B8" stroke="white" stroke-width="3"/>
+                <text x="45" y="50" font-size="14" text-anchor="middle">☕</text>
+                <rect x="80" y="32" width="34" height="26" rx="6" fill="#DCD3FF" stroke="white" stroke-width="3"/>
+                <text x="97" y="50" font-size="14" text-anchor="middle">✨</text>
+                <circle cx="50" cy="100" r="18" fill="#FFD6E0" stroke="white" stroke-width="3"/>
+                <text x="50" y="105" font-size="14" text-anchor="middle">🌸</text>
+                <path d="M95 90L102 105L118 107L106 118L109 133L95 125L81 133L84 118L72 107L88 105L95 90Z" fill="#C8F0DF" stroke="white" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Stickers</span>
+              <h3 class="product-title">Pack Stickers "Café & Magia"</h3>
+              <p class="product-desc">2 planchas en vinilo mate troquelado, resistentes al agua. Ideales para termo o notebook.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 2.900</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Pack Stickers Café y Magia" data-price="$ 2.900">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Fichero Pastel Organizador -->
+          <article class="product-card" data-category="ficheros" data-reveal="board">
+            <div class="product-thumb">
+              <!-- SVG Fichero -->
+              <svg width="160" height="150" viewBox="0 0 160 150" fill="none">
+                <rect x="20" y="45" width="120" height="85" rx="8" fill="#FFE58F" stroke="#E0AB1D" stroke-width="2"/>
+                <path d="M30 45V28C30 24 34 20 38 20H65C69 20 73 24 73 28V45" fill="#FFD6E0"/>
+                <path d="M70 45V32C70 28 74 24 78 24H105C109 24 113 28 113 32V45" fill="#C8F0DF"/>
+                <rect x="50" y="70" width="60" height="28" rx="4" fill="white" stroke="#E0AB1D"/>
+                <line x1="60" y1="84" x2="100" y2="84" stroke="#E0AB1D" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Ficheros</span>
+              <h3 class="product-title">Fichero Organizador Estudio</h3>
+              <p class="product-desc">Caja rígida pastel + 60 fichas número 3 rayadas con solapas mensuales indexadas.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 8.200</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Fichero Organizador Estudio" data-price="$ 8.200">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Libro para Colorear Botánica -->
+          <article class="product-card" data-category="colorear" data-reveal="board">
+            <div class="product-thumb">
+              <span class="badge badge--lilac product-badge">Relax</span>
+              <!-- SVG Libro Colorear -->
+              <svg width="150" height="170" viewBox="0 0 150 170" fill="none">
+                <rect x="15" y="10" width="120" height="150" rx="8" fill="#DCD3FF" stroke="#5136B3" stroke-width="2"/>
+                <circle cx="75" cy="80" r="42" fill="white" stroke="#5136B3" stroke-width="2"/>
+                <path d="M75 50C75 65 65 75 75 80C85 75 75 65 75 50Z" stroke="#5136B3" stroke-width="2"/>
+                <path d="M75 110C75 95 65 85 75 80C85 85 75 95 75 110Z" stroke="#5136B3" stroke-width="2"/>
+                <path d="M45 80C60 80 70 70 75 80C70 90 60 80 45 80Z" stroke="#5136B3" stroke-width="2"/>
+                <path d="M105 80C90 80 80 70 75 80C80 90 90 80 105 80Z" stroke="#5136B3" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Libros para Colorear</span>
+              <h3 class="product-title">Libro de Arte Floral A4</h3>
+              <p class="product-desc">32 ilustraciones exclusivas impresas en papel chambril de 180g. Cero traspaso de tinta.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 5.900</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Libro de Arte Floral A4" data-price="$ 5.900">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Tarjetas con Foil Dorado (100u) -->
+          <article class="product-card" data-category="tarjetas" data-reveal="board">
+            <div class="product-thumb">
+              <!-- SVG Tarjetas presentación -->
+              <svg width="160" height="150" viewBox="0 0 160 150" fill="none">
+                <rect x="35" y="25" width="100" height="65" rx="6" fill="#1E293B" transform="rotate(8 35 25)"/>
+                <rect x="25" y="45" width="105" height="68" rx="6" fill="#FFFDF9" stroke="#E2E8F0" stroke-width="2"/>
+                <circle cx="45" cy="72" r="10" fill="#FFAE00"/>
+                <line x1="62" y1="68" x2="115" y2="68" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+                <line x1="62" y1="78" x2="95" y2="78" stroke="#FFAE00" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Tarjetas</span>
+              <h3 class="product-title">Pack 100 Tarjetas Kraft / Mate</h3>
+              <p class="product-desc">Impresión doble faz en papel 350g con esquinas redondeadas o detalles foil metalizados.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 9.500</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Pack 100 Tarjetas Kraft Mate" data-price="$ 9.500">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Libreta de Bolsillo Pastel A6 -->
+          <article class="product-card" data-category="libretas" data-reveal="board">
+            <div class="product-thumb">
+              <!-- SVG Libreta Pocket -->
+              <svg width="130" height="160" viewBox="0 0 130 160" fill="none">
+                <rect x="20" y="15" width="90" height="130" rx="8" fill="#C8F0DF" stroke="#0C6B46" stroke-width="2"/>
+                <circle cx="65" cy="70" r="22" fill="white"/>
+                <text x="65" y="75" font-family="'Fredoka', sans-serif" font-weight="700" font-size="12" fill="#0C6B46" text-anchor="middle">POCKET</text>
+                <rect x="35" y="10" width="8" height="12" rx="2" fill="#334155"/>
+                <rect x="55" y="10" width="8" height="12" rx="2" fill="#334155"/>
+                <rect x="75" y="10" width="8" height="12" rx="2" fill="#334155"/>
+                <rect x="95" y="10" width="8" height="12" rx="2" fill="#334155"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Libretas</span>
+              <h3 class="product-title">Libreta Pocket A6 Floral</h3>
+              <p class="product-desc">Tamaño bolsillo ideal para cartera o mochila. 60 hojas punteadas ideales bullet journal.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 4.200</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Libreta Pocket A6 Floral" data-price="$ 4.200">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Plancha Stickers Holográficos -->
+          <article class="product-card" data-category="stickers" data-reveal="board">
+            <div class="product-thumb">
+              <span class="badge badge--accent product-badge">Brillo Holo</span>
+              <!-- SVG Stickers Holo -->
+              <svg width="150" height="170" viewBox="0 0 150 170" fill="none">
+                <rect x="15" y="10" width="120" height="150" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+                <path d="M45 40C30 55 60 70 45 85" stroke="#FF5A5F" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="85" cy="55" r="18" fill="url(#holo-grad)" stroke="white" stroke-width="2"/>
+                <ellipse cx="85" cy="55" rx="26" ry="6" fill="none" stroke="#FF5A5F" stroke-width="2" transform="rotate(-20 85 55)"/>
+                <path d="M50 115L54 125L64 128L54 131L50 141L46 131L36 128L46 125L50 115Z" fill="#FFAE00"/>
+                <defs>
+                  <linearGradient id="holo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFD6E0"/>
+                    <stop offset="50%" stop-color="#C8F0DF"/>
+                    <stop offset="100%" stop-color="#DCD3FF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Stickers</span>
+              <h3 class="product-title">Stickers Galaxia Holográfica</h3>
+              <p class="product-desc">Efecto arcoíris brillante bajo la luz. Troquel individual para decorar botellas y fundas.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 3.400</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Stickers Galaxia Holografica" data-price="$ 3.400">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Fichero Recetas de Cocina -->
+          <article class="product-card" data-category="ficheros" data-reveal="board">
+            <div class="product-thumb">
+              <!-- SVG Fichero Recetas -->
+              <svg width="160" height="150" viewBox="0 0 160 150" fill="none">
+                <rect x="20" y="45" width="120" height="85" rx="8" fill="#FFD6E0" stroke="#FF5A5F" stroke-width="2"/>
+                <path d="M30 45V28C30 24 34 20 38 20H68C72 20 76 24 76 28V45" fill="#FFF0B8"/>
+                <text x="53" y="36" font-size="12" text-anchor="middle">🍰</text>
+                <path d="M72 45V32C72 28 76 24 80 24H110C114 24 118 28 118 32V45" fill="#CFE8FF"/>
+                <text x="95" y="38" font-size="12" text-anchor="middle">🥗</text>
+                <rect x="45" y="72" width="70" height="24" rx="4" fill="white" stroke="#FF5A5F"/>
+                <text x="80" y="88" font-family="'Caveat', cursive" font-size="15" font-weight="700" fill="#262135" text-anchor="middle">Mis Recetas</text>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Ficheros</span>
+              <h3 class="product-title">Fichero Gourmet de Recetas</h3>
+              <p class="product-desc">Incluye 50 fichas plastificadas con campos para ingredientes y tiempo, más separadores pastel.</p>
+              <div class="product-footer">
+                <span class="product-price">$ 8.600</span>
+                <a href="#contacto" class="btn btn--whatsapp btn--sm js-wa-link" data-product="Fichero Gourmet de Recetas" data-price="$ 8.600">
+                  <span>Pedir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. CÓMO SE ARMA TU PEDIDO (LÍNEA DE TIEMPO ANIMADA CON SCROLL)
+         ========================================================================== -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade">
+          <span class="badge badge--mint">Paso a paso</span>
+          <h2 class="section-title">¿Cómo se Arma tu Pedido?</h2>
+          <p class="section-subtitle">
+            Hacemos que pedir tu papelería personalizada sea una experiencia cálida, rápida y transparente.
+          </p>
+        </div>
+
+        <div class="timeline-wrap" id="timeline-wrap">
+          
+          <!-- Línea vertical animada con scrub -->
+          <div class="timeline-line">
+            <div class="timeline-line-fill" id="timeline-line-fill"></div>
+          </div>
+
+          <!-- Paso 1 -->
+          <div class="timeline-step" id="step-1">
+            <div class="timeline-marker">1</div>
+            <div class="timeline-card sticker-cut">
+              <div class="washi-tape washi-tape--butter" style="top: -10px; right: 25px; width: 90px;"></div>
+              
+              <div class="timeline-header">
+                <span class="badge badge--butter">Paso 1: Elección</span>
+                <span style="font-size: 0.85rem; color: var(--c-ink-light); font-weight: 700;">⏱️ Inmediato</span>
+              </div>
+
+              <div class="timeline-icon-box" style="background: rgba(255, 240, 184, 0.5); color: #8A6800;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+              </div>
+
+              <h3 class="timeline-step-title">Elegís tus productos o traés tu idea</h3>
+              <p class="timeline-desc">
+                Explorá nuestras libretas, ficheros, planchas de stickers y tarjetas. Podés elegir modelos prediseñados de nuestro catálogo o pedir uno 100% personalizado con tu nombre, colores de marca o ilustraciones propias.
+              </p>
+
+              <div class="timeline-tag-list">
+                <span class="timeline-tag">✨ Diseños exclusivos</span>
+                <span class="timeline-tag">📐 Tamaños A4, A5, A6</span>
+                <span class="timeline-tag">💡 Sin pedido mínimo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="timeline-step" id="step-2">
+            <div class="timeline-marker">2</div>
+            <div class="timeline-card sticker-cut">
+              <div class="washi-tape washi-tape--pink" style="top: -10px; left: 25px; width: 90px;"></div>
+              
+              <div class="timeline-header">
+                <span class="badge badge--accent">Paso 2: Personalización</span>
+                <span style="font-size: 0.85rem; color: var(--c-ink-light); font-weight: 700;">💬 En el día</span>
+              </div>
+
+              <div class="timeline-icon-box" style="background: rgba(255, 90, 95, 0.12); color: var(--c-accent);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                </svg>
+              </div>
+
+              <h3 class="timeline-step-title">Coordinamos y aprobás por WhatsApp</h3>
+              <p class="timeline-desc">
+                Hablamos directo por chat. Nos pasás los textos, fotos o detalles que querés sumar. Te armamos una <strong>maqueta digital previa gratuita</strong> para que veas cómo queda antes de imprimir. ¡No producimos nada hasta que estés 100% conforme!
+              </p>
+
+              <div class="timeline-tag-list">
+                <span class="timeline-tag">📱 Atención personalizada</span>
+                <span class="timeline-tag">🎨 Muestra digital previa</span>
+                <span class="timeline-tag">👌 Correcciones sin costo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="timeline-step" id="step-3">
+            <div class="timeline-marker">3</div>
+            <div class="timeline-card sticker-cut">
+              <div class="washi-tape washi-tape--mint" style="top: -10px; right: 25px; width: 90px;"></div>
+              
+              <div class="timeline-header">
+                <span class="badge badge--mint">Paso 3: Taller Artesanal</span>
+                <span style="font-size: 0.85rem; color: var(--c-ink-light); font-weight: 700;">⏳ 48 a 72 hs</span>
+              </div>
+
+              <div class="timeline-icon-box" style="background: rgba(200, 240, 223, 0.5); color: #0C6B46;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                  <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                  <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+                </svg>
+              </div>
+
+              <h3 class="timeline-step-title">Confección y detalle a mano</h3>
+              <p class="timeline-desc">
+                Imprimimos con tintas de alta saturación que no se decoloran. Laminamos las tapas (mate o brillante), perforamos para anillado metálico doble ring wire y troquelamos los stickers al milímetro con cuchillas de precisión.
+              </p>
+
+              <div class="timeline-tag-list">
+                <span class="timeline-tag">📄 Papeles de 90g a 350g</span>
+                <span class="timeline-tag">💧 Vinilos resistentes al agua</span>
+                <span class="timeline-tag">🛡️ Laminado protector</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="timeline-step" id="step-4">
+            <div class="timeline-marker">4</div>
+            <div class="timeline-card sticker-cut">
+              <div class="washi-tape washi-tape--lilac" style="top: -10px; left: 25px; width: 90px;"></div>
+              
+              <div class="timeline-header">
+                <span class="badge badge--lilac">Paso 4: ¡A disfrutar!</span>
+                <span style="font-size: 0.85rem; color: var(--c-ink-light); font-weight: 700;">🚚 Envíos a todo el país</span>
+              </div>
+
+              <div class="timeline-icon-box" style="background: rgba(220, 211, 255, 0.5); color: #5136B3;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+
+              <h3 class="timeline-step-title">Packaging perfumado y Envío seguro</h3>
+              <p class="timeline-desc">
+                Cuidamos la experiencia desde que abrís la caja: envolvemos con papel de seda, añadimos stickers de regalo y fragancia exclusiva de taller. Te enviamos el código de seguimiento de Correo Argentino / Andreani para que sigas el paquete hasta tus manos.
+              </p>
+
+              <div class="timeline-tag-list">
+                <span class="timeline-tag">🎁 Regalo sorpresa incluido</span>
+                <span class="timeline-tag">📦 Embalaje anti-golpes</span>
+                <span class="timeline-tag">📍 Seguimiento en tiempo real</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. SECCIÓN PERSONALIZADOS (A MEDIDA & POLAROIDS)
+         ========================================================================== -->
+    <section class="section section--tinted" id="personalizados">
+      <div class="container custom-wrap">
+        
+        <div class="custom-content" data-reveal="fade">
+          <span class="badge badge--accent">Exclusivo para vos</span>
+          <h2 class="section-title">Pedidos Personalizados</h2>
+          <p class="section-subtitle" style="text-align: left; margin-bottom: 1.5rem;">
+            ¿Tenés un emprendimiento, un evento especial o querés un regalo único con nombre propio? Creamos magia a tu medida.
+          </p>
+
+          <ul class="custom-checklist">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Libretas corporativas y souvenirs:</strong> Tapa con tu marca o foto, cinta señaladora y hoja de dedicatoria.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Stickers con tu diseño o logo:</strong> Troquelado de precisión con la silueta de tu ilustración o marca comercial.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Tarjetas con acabados especiales:</strong> Papel texturado, bordes redondeados y laminado suave terciopelo.</span>
+            </li>
+          </ul>
+
+          <div style="margin-top: 2rem;">
+            <a href="#contacto" class="btn btn--primary js-wa-link" data-msg="¡Hola! Me gustaría cotizar un pedido personalizado con mi diseño 🎨">
+              <span>Cotizar Pedido a Medida</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Galería Polaroid tipo tablero de corcho/muro de inspiración -->
+        <div class="polaroid-gallery" id="polaroids">
+          
+          <!-- Polaroid 1 -->
+          <div class="polaroid-card polaroid-1" data-reveal="board">
+            <div class="washi-tape washi-tape--pink" style="top:-12px; left: 35%; width: 70px;"></div>
+            <div class="polaroid-img" style="background:#FFD6E0; display:flex; align-items:center; justify-content:center;">
+              <svg width="90" height="90" viewBox="0 0 80 80" fill="none">
+                <rect x="15" y="10" width="50" height="60" rx="4" fill="#FF5A5F"/>
+                <circle cx="40" cy="35" r="14" fill="#FFF0B8"/>
+                <text x="40" y="40" font-size="14" text-anchor="middle">👑</text>
+              </svg>
+            </div>
+            <p class="polaroid-caption">Libretas con tu nombre</p>
+          </div>
+
+          <!-- Polaroid 2 -->
+          <div class="polaroid-card polaroid-2" data-reveal="board">
+            <div class="washi-tape washi-tape--mint" style="top:-12px; left: 30%; width: 70px;"></div>
+            <div class="polaroid-img" style="background:#C8F0DF; display:flex; align-items:center; justify-content:center;">
+              <svg width="90" height="90" viewBox="0 0 80 80" fill="none">
+                <circle cx="40" cy="40" r="30" fill="white" stroke="#0C6B46" stroke-width="3"/>
+                <text x="40" y="46" font-size="24" text-anchor="middle">🍓</text>
+              </svg>
+            </div>
+            <p class="polaroid-caption">Stickers troquelados</p>
+          </div>
+
+          <!-- Polaroid 3 -->
+          <div class="polaroid-card polaroid-3" data-reveal="board">
+            <div class="washi-tape washi-tape--butter" style="top:-12px; left: 35%; width: 70px;"></div>
+            <div class="polaroid-img" style="background:#FFF0B8; display:flex; align-items:center; justify-content:center;">
+              <svg width="90" height="90" viewBox="0 0 80 80" fill="none">
+                <rect x="10" y="20" width="60" height="40" rx="4" fill="#262135"/>
+                <circle cx="25" cy="40" r="6" fill="#FFAE00"/>
+                <line x1="36" y1="36" x2="60" y2="36" stroke="#FFAE00" stroke-width="2"/>
+                <line x1="36" y1="44" x2="52" y2="44" stroke="#FFF" stroke-width="2"/>
+              </svg>
+            </div>
+            <p class="polaroid-caption">Tarjetas de marca</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. TESTIMONIOS (NOTAS ADHESIVAS PASTEL)
+         ========================================================================== -->
+    <section class="section" id="opiniones">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade">
+          <span class="badge badge--lilac">Amor de clientes</span>
+          <h2 class="section-title">Lo Que Dicen de Nosotros</h2>
+          <p class="section-subtitle">
+            Cada mensajito nos llena el corazón y nos impulsa a seguir creando con dedicación artesanal.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Reseña 1 -->
+          <div class="post-it post-it--yellow sticker-cut" data-reveal="board" style="transform: rotate(-1.5deg);">
+            <div class="washi-tape washi-tape--butter" style="top: -10px; left: 35%; width: 80px;"></div>
+            <div class="post-it-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="post-it-text">
+              "Las libretas son aún más hermosas en persona que en fotos. El papel es súper grueso, no se traspasa ninguna microfibra y el packaging llegó con un aroma riquísimo. ¡Recomiendo al 1000%!"
+            </p>
+            <div class="post-it-author">
+              <div class="post-it-avatar">🌸</div>
+              <div>
+                <h4 class="post-it-name">Sofía Martínez</h4>
+                <p class="post-it-info">Compró Cuaderno Botánico A5</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reseña 2 -->
+          <div class="post-it post-it--pink sticker-cut" data-reveal="board" style="transform: rotate(2deg);">
+            <div class="washi-tape washi-tape--pink" style="top: -10px; left: 30%; width: 80px;"></div>
+            <div class="post-it-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="post-it-text">
+              "Mandé a hacer las tarjetas de presentación para mi salón de estética y quedaron de ensueño con el laminado mate. La atención por WhatsApp fue súper atenta y rápida. ¡Volveré a pedir seguro!"
+            </p>
+            <div class="post-it-author">
+              <div class="post-it-avatar">✨</div>
+              <div>
+                <h4 class="post-it-name">Camila Fernández</h4>
+                <p class="post-it-info">Compró Pack 100 Tarjetas Kraft</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reseña 3 -->
+          <div class="post-it post-it--mint sticker-cut" data-reveal="board" style="transform: rotate(-2deg);">
+            <div class="washi-tape washi-tape--mint" style="top: -10px; left: 35%; width: 80px;"></div>
+            <div class="post-it-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="post-it-text">
+              "Los stickers para el termo son eternos. Se me cayeron, se lavaron un montón de veces y no se despegan ni pierden el color. El fichero de recetas también es un diez para regalar."
+            </p>
+            <div class="post-it-author">
+              <div class="post-it-avatar">🍓</div>
+              <div>
+                <h4 class="post-it-name">Lucía Valenzuela</h4>
+                <p class="post-it-info">Compró Planchas Stickers + Fichero</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. PREGUNTAS FRECUENTES (ACORDEÓN DINÁMICO)
+         ========================================================================== -->
+    <section class="section section--tinted" id="faq">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade">
+          <span class="badge badge--butter">Dudas resueltas</span>
+          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <p class="section-subtitle">
+            Todo lo que necesitás saber antes de hacer tu compra o encargar un trabajo personalizado.
+          </p>
+        </div>
+
+        <div class="faq-container">
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>¿Cómo realizo el pago de mi pedido?</span>
+              <span class="faq-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              Aceptamos transferencias bancarias, Mercado Pago (dinero en cuenta y tarjetas de débito/crédito) y efectivo al retirar en nuestro punto de entrega. Para pedidos personalizados solicitamos una seña del 50% para comenzar el diseño.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>¿Hacen envíos a todo el país y cuánto demoran?</span>
+              <span class="faq-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              ¡Sí! Hacemos envíos a todas las provincias a través de Correo Argentino y Andreani (a sucursal o a domicilio). Los productos de stock se despachan en 24 a 48 hs hábiles, y los personalizados demoran entre 3 y 5 días hábiles de confección.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>¿Qué tipo de papel usan en las libretas y libros?</span>
+              <span class="faq-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              Usamos papel ecológico certificado de alto gramaje: 90g para cuadernos y libretas (ideal para pluma fuente o marcadores al agua sin traspasar) y papel chambril de 150g a 180g para los libros de colorear.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>¿Puedo enviar mi propio diseño para stickers o libretas?</span>
+              <span class="faq-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              ¡Claro que sí! Nos enviás tu logo o ilustración en formato PDF, PNG de alta resolución o Illustrator. Nosotros te armamos una maqueta digital para que veas exactamente cómo quedará antes de mandar a imprimir.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. CONTACTO & FORMULARIO DIRECTO A WHATSAPP
+         ========================================================================== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade">
+          <span class="badge badge--mint">Estamos para ayudarte</span>
+          <h2 class="section-title">Hablemos de tu Proyecto</h2>
+          <p class="section-subtitle">
+            Completá el formulario para enviarnos tu consulta por WhatsApp o escribinos directamente por nuestras redes.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Información y Canales -->
+          <div class="contact-info-card sticker-cut" data-reveal="board">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Canales Directos</h3>
+            <p style="color: var(--c-ink-muted);">Respondemos con gusto todas tus dudas de lunes a sábados de 9 a 19 hs.</p>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-item-title">WhatsApp</h4>
+                <p class="contact-item-sub" id="contact-phone-display">+54 9 11 1234-5678</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div>
+                <h4 class="contact-item-title">Instagram</h4>
+                <p class="contact-item-sub" id="contact-insta-display">@papelypurpurina</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4 class="contact-item-title">Taller & Entregas</h4>
+                <p class="contact-item-sub" id="contact-location-display">Buenos Aires, Argentina (Envíos a todo el país)</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem; padding-top: 1.5rem; border-top: 1px dashed var(--c-line);">
+              <span class="font-hand" style="font-size: 1.6rem;">¡Amamos diseñar para vos! 💕</span>
+            </div>
+          </div>
+
+          <!-- Formulario Interactivo -->
+          <form class="contact-form sticker-cut" id="contact-form" data-reveal="board">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.2rem;">Envianos tu Mensaje</h3>
+            <p style="color: var(--c-ink-muted); margin-bottom: 1rem;">Al presionar Enviar se abrirá WhatsApp con el mensaje ya armado.</p>
+
+            <div class="form-group">
+              <label for="form-name" class="form-label">Tu Nombre *</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Ej: Valentina López" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-category" class="form-label">¿Qué producto te interesa?</label>
+              <select id="form-category" class="form-control">
+                <option value="Libretas">Libretas y Cuadernos</option>
+                <option value="Ficheros">Ficheros Organizadores</option>
+                <option value="Stickers">Stickers y Planchas</option>
+                <option value="Colorear">Libros para Colorear</option>
+                <option value="Tarjetas">Tarjetas de Presentación</option>
+                <option value="Personalizado General">Pedido Personalizado a Medida</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-msg" class="form-label">Tu Mensaje o Detalle de tu Pedido *</label>
+              <textarea id="form-msg" class="form-control" placeholder="Contanos qué cantidad buscás, si tenés diseño propio o qué detalles te gustaría incluir..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="margin-top: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+              <span>Enviar Consulta a WhatsApp</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       10. FOOTER CON ENLACES Y CRÉDITOS
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-about">
+          <a href="#" class="brand-logo">
+            <svg viewBox="0 0 100 100" fill="none" style="width: 32px; height: 32px;">
+              <rect x="18" y="15" width="56" height="70" rx="8" fill="var(--c-accent)" />
+              <rect x="26" y="15" width="48" height="70" rx="6" fill="#FFFBF4" />
+              <circle cx="20" cy="28" r="4" fill="#262135" />
+              <circle cx="20" cy="50" r="4" fill="#262135" />
+              <circle cx="20" cy="72" r="4" fill="#262135" />
+            </svg>
+            <span id="footer-brand-name">Papel <span>&</span> Purpurina</span>
+          </a>
+          <p>
+            Papelería creativa y artesanal diseñada con amor para inspirar tus días de estudio, trabajo y creatividad.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#productos">Productos Destacados</a></li>
+            <li><a href="#como-funciona">Cómo Armar tu Pedido</a></li>
+            <li><a href="#personalizados">Pedidos a Medida</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Seguinos</h4>
+          <p style="color: var(--c-ink-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+            Compartimos procesos en el taller y novedades exclusivas:
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn js-social-insta" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="social-btn js-social-wa" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> <strong id="copyright-brand">Papel & Purpurina</strong>. Todos los derechos reservados. Diseñado con calidez y buen gusto.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       11. BOTÓN FLOTANTE DE WHATSAPP
+       ========================================================================== -->
+  <a href="#contacto" class="floating-wa js-wa-link" id="floating-wa" aria-label="Abrir chat de WhatsApp" data-msg="¡Hola! Quisiera hacerles una consulta 🌸">
+    <div class="floating-wa-badge">1</div>
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+    </svg>
+  </a>
+
+  <!-- GSAP y ScrollTrigger desde CDN oficial cdnjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- ==========================================================================
+       JAVASCRIPT ORDENADO POR SECCIONES Y MÓDULOS
+       ========================================================================== -->
+  <script>
+    /**
+     * ========================================================================
+     * ✏️ OBJETO DE CONFIGURACIÓN DE MARCA (EDITABLE FÁCILMENTE)
+     * ========================================================================
+     */
+    const CONFIG = {
+      // ✏️ Nombre comercial
+      brandName: "Papel & Purpurina",
+      
+      // ✏️ Número de WhatsApp en formato internacional (sin '+' ni guiones ni espacios)
+      // Ejemplo Argentina: 5491112345678 (código país 54 + 9 móvil + código área + número)
+      whatsappNumber: "5491112345678",
+      
+      // ✏️ Usuario de Instagram (sin @)
+      instagramUser: "papelypurpurina",
+      
+      // ✏️ Ubicación visible
+      location: "Buenos Aires, Argentina (Envíos a todo el país)",
+      
+      // ✏️ Teléfono visible formateado
+      phoneDisplay: "+54 9 11 1234-5678",
+      
+      // ✏️ Mensaje por defecto para consultas generales
+      defaultWaMessage: "¡Hola! Vi su página de Papelería Creativa y quisiera hacer una consulta 🌸"
+    };
+
+    /**
+     * Sincroniza datos del objeto CONFIG con elementos del DOM
+     */
+    function applyBrandConfig() {
+      const phoneElem = document.getElementById("contact-phone-display");
+      if (phoneElem) phoneElem.textContent = CONFIG.phoneDisplay;
+
+      const instaElem = document.getElementById("contact-insta-display");
+      if (instaElem) instaElem.textContent = `@${CONFIG.instagramUser}`;
+
+      const locElem = document.getElementById("contact-location-display");
+      if (locElem) locElem.textContent = CONFIG.location;
+
+      const yearElem = document.getElementById("year");
+      if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+      document.querySelectorAll(".js-social-insta").forEach(el => {
+        el.href = `https://instagram.com/${CONFIG.instagramUser}`;
+      });
+
+      document.querySelectorAll(".js-wa-link").forEach(link => {
+        const customMsg = link.getAttribute("data-msg");
+        const product = link.getAttribute("data-product");
+        const price = link.getAttribute("data-price");
+        
+        let textToSend = customMsg || CONFIG.defaultWaMessage;
+        if (product) {
+          textToSend = `¡Hola! Me encantó el "${product}" (${price}) y me gustaría encargarlo 🌸`;
+        }
+
+        const encoded = encodeURIComponent(textToSend);
+        link.href = `https://wa.me/${CONFIG.whatsappNumber}?text=${encoded}`;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      });
+
+      const contactForm = document.getElementById("contact-form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("form-name").value.trim();
+          const cat = document.getElementById("form-category").value;
+          const msg = document.getElementById("form-msg").value.trim();
+
+          const messageText = `¡Hola ${CONFIG.brandName}! Mi nombre es ${name}.\nQuisiera consultar por: *${cat}*.\nDetalle: ${msg}`;
+          const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+          window.open(waUrl, "_blank");
+        });
+      }
+    }
+
+    /**
+     * ========================================================================
+     * HEADER, MENÚ HAMBURGUESA Y BARRA DE PROGRESO
+     * ========================================================================
+     */
+    function initHeaderAndNav() {
+      const header = document.getElementById("header");
+      const progressBar = document.getElementById("progress-bar");
+      const hamburger = document.getElementById("hamburger-btn");
+      const drawer = document.getElementById("mobile-drawer");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      window.addEventListener("scroll", () => {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = totalHeight > 0 ? (window.scrollY / totalHeight) : 0;
+        
+        if (progressBar) {
+          progressBar.style.transform = `scaleX(${progress})`;
+          progressBar.setAttribute("aria-valuenow", Math.round(progress * 100));
+        }
+
+        if (header) {
+          if (window.scrollY > 40) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        }
+      }, { passive: true });
+
+      if (hamburger && drawer) {
+        hamburger.addEventListener("click", () => {
+          const isOpen = drawer.classList.toggle("open");
+          hamburger.classList.toggle("active");
+          hamburger.setAttribute("aria-expanded", isOpen);
+          document.body.style.overflow = isOpen ? "hidden" : "";
+        });
+
+        mobileLinks.forEach(link => {
+          link.addEventListener("click", () => {
+            drawer.classList.remove("open");
+            hamburger.classList.remove("active");
+            hamburger.setAttribute("aria-expanded", "false");
+            document.body.style.overflow = "";
+          });
+        });
+      }
+    }
+
+    /**
+     * ========================================================================
+     * FILTROS DE PRODUCTOS DESTACADOS
+     * ========================================================================
+     */
+    function initProductFilters() {
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const productCards = document.querySelectorAll(".product-card");
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+
+          productCards.forEach(card => {
+            const cardCat = card.getAttribute("data-category");
+            if (filter === "all" || cardCat === filter) {
+              card.style.display = "flex";
+              if (window.gsap) {
+                gsap.fromTo(card, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" });
+              }
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+
+      document.querySelectorAll(".js-filter-trigger").forEach(trigger => {
+        trigger.addEventListener("click", (e) => {
+          const targetCat = trigger.getAttribute("data-category");
+          const matchingBtn = document.querySelector(`.filter-btn[data-filter="${targetCat}"]`);
+          if (matchingBtn) {
+            matchingBtn.click();
+          }
+        });
+      });
+    }
+
+    /**
+     * ========================================================================
+     * FAQ ACORDEÓN INTERACTIVO
+     * ========================================================================
+     */
+    function initFaqAccordion() {
+      const items = document.querySelectorAll(".faq-item");
+
+      items.forEach(item => {
+        const trigger = item.querySelector(".faq-trigger");
+        if (!trigger) return;
+
+        trigger.addEventListener("click", () => {
+          const isOpen = item.classList.contains("open");
+          
+          items.forEach(other => {
+            if (other !== item) {
+              other.classList.remove("open");
+              other.querySelector(".faq-trigger")?.setAttribute("aria-expanded", "false");
+            }
+          });
+
+          item.classList.toggle("open", !isOpen);
+          trigger.setAttribute("aria-expanded", (!isOpen).toString());
+        });
+      });
+    }
+
+    /**
+     * ========================================================================
+     * ANIMACIONES GSAP + SCROLLTRIGGER
+     * ========================================================================
+     */
+    function initGsapAnimations() {
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReducedMotion) {
+        document.documentElement.classList.remove("js-anim");
+        return;
+      }
+
+      if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+        document.documentElement.classList.remove("js-anim");
+        return;
+      }
+
+      document.documentElement.classList.add("js-anim");
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 1. Animación del Hero al Cargar: caída y armado
+      const heroTl = gsap.timeline({ defaults: { ease: "back.out(1.7)", duration: 0.9 } });
+
+      heroTl
+        .from(".hero-content > *", {
+          opacity: 0,
+          y: 35,
+          stagger: 0.12,
+          duration: 0.8,
+          ease: "power3.out"
+        })
+        .from("#hero-notebook", {
+          opacity: 0,
+          scale: 0.7,
+          rotation: -25,
+          y: -80,
+          duration: 1.1,
+          ease: "bounce.out"
+        }, "-=0.6")
+        .from("#hero-pencil", {
+          opacity: 0,
+          y: -120,
+          rotation: 80,
+          duration: 0.9,
+          ease: "back.out(2)"
+        }, "-=0.7")
+        .from(["#hero-heart", "#hero-star", "#hero-clip"], {
+          opacity: 0,
+          scale: 0.3,
+          stagger: 0.15,
+          duration: 0.7,
+          ease: "back.out(2.5)"
+        }, "-=0.5");
+
+      // 2. Parallax suave en doodles decorativos
+      gsap.utils.toArray(".bg-doodle").forEach(doodle => {
+        const speed = parseFloat(doodle.getAttribute("data-speed")) || 0.2;
+        gsap.to(doodle, {
+          y: () => speed * 250,
+          ease: "none",
+          scrollTrigger: {
+            trigger: doodle.parentElement,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1
+          }
+        });
+      });
+
+      // 3. Batch reveals para grillas: Piezas que se pegan en tablero con stagger y rebote sutil
+      ScrollTrigger.batch("[data-reveal='board']", {
+        interval: 0.1,
+        batchMax: 4,
+        onEnter: batch => {
+          gsap.fromTo(batch, 
+            { opacity: 0, y: 40, scale: 0.92, rotation: (i) => (i % 2 === 0 ? -2 : 2) },
+            { 
+              opacity: 1, 
+              y: 0, 
+              scale: 1, 
+              rotation: 0,
+              duration: 0.75, 
+              stagger: 0.12, 
+              ease: "back.out(1.6)",
+              overwrite: true 
+            }
+          );
+        },
+        once: true
+      });
+
+      // 4. Fade reveals simples para títulos y textos
+      ScrollTrigger.batch("[data-reveal='fade']", {
+        onEnter: batch => {
+          gsap.fromTo(batch,
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: "power3.out", overwrite: true }
+          );
+        },
+        once: true
+      });
+
+      // 5. Línea de tiempo animada con scrub
+      const timelineSection = document.getElementById("timeline-wrap");
+      const lineFill = document.getElementById("timeline-line-fill");
+
+      if (timelineSection && lineFill) {
+        gsap.to(lineFill, {
+          height: "100%",
+          ease: "none",
+          scrollTrigger: {
+            trigger: timelineSection,
+            start: "top 70%",
+            end: "bottom 80%",
+            scrub: true
+          }
+        });
+
+        const steps = document.querySelectorAll(".timeline-step");
+        steps.forEach((step, idx) => {
+          // Activar estilo visual activo (marker iluminado) cuando el scroll llega
+          ScrollTrigger.create({
+            trigger: step,
+            start: "top 70%",
+            onEnter: () => step.classList.add("active"),
+            onLeaveBack: () => step.classList.remove("active")
+          });
+
+          const card = step.querySelector(".timeline-card");
+          const marker = step.querySelector(".timeline-marker");
+          const isOdd = idx % 2 === 0;
+
+          // Animación de entrada de la tarjeta
+          if (card) {
+            gsap.fromTo(card,
+              {
+                opacity: 0,
+                x: window.innerWidth >= 768 ? (isOdd ? -40 : 40) : 25,
+                scale: 0.94
+              },
+              {
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                duration: 0.85,
+                ease: "back.out(1.5)",
+                scrollTrigger: {
+                  trigger: step,
+                  start: "top 80%",
+                  once: true
+                }
+              }
+            );
+          }
+
+          // Animación de entrada del marcador
+          if (marker) {
+            gsap.fromTo(marker,
+              { scale: 0, opacity: 0 },
+              {
+                scale: 1,
+                opacity: 1,
+                duration: 0.6,
+                ease: "back.out(2)",
+                scrollTrigger: {
+                  trigger: step,
+                  start: "top 82%",
+                  once: true
+                }
+              }
+            );
+          }
+        });
+      }
+
+      // 6. Efecto botón flotante WhatsApp: aparece tras scrollear
+      const floatingWa = document.getElementById("floating-wa");
+      if (floatingWa) {
+        gsap.fromTo(floatingWa, 
+          { scale: 0, opacity: 0 },
+          {
+            scale: 1,
+            opacity: 1,
+            duration: 0.5,
+            ease: "back.out(2)",
+            scrollTrigger: {
+              trigger: "#hero",
+              start: "bottom 80%",
+              toggleActions: "play none none reverse"
+            }
+          }
+        );
+      }
+    }
+
+    /**
+     * ========================================================================
+     * INICIALIZACIÓN GLOBAL AL CARGAR EL DOM
+     * ========================================================================
+     */
+    document.addEventListener("DOMContentLoaded", () => {
+      applyBrandConfig();
+      initHeaderAndNav();
+      initProductFilters();
+      initFaqAccordion();
+      initGsapAnimations();
+    });
+  </script>
+</body>
+</html>
